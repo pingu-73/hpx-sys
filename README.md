@@ -58,3 +58,11 @@ To build the bindings run
 ```
 cargo b --verbose
 ```
+
+## Remaining Things
+[] Build script is currently finding for hpx at specified location. But
+  since hpx uses
+  [pkg-config](https://hpx-docs.stellar-group.org/branches/master/html/manual/creating_hpx_projects.html#using-hpx-with-pkg-config) 
+  and rust already has a [pkg-config](https://crates.io/crates/pkg-config)
+  wrapper.
+[] 
