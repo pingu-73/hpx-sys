@@ -52,3 +52,9 @@ Add the library path of HPX to ldconfig
 sudo echo /opt/hpx/lib > /etc/ld.so.conf.d/hpx.conf
 sudo ldconfig
 ```
+
+## Building hpx-sys
+To build the bindings run
+```
+cargo b --verbose
+```
