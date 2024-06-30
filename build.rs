@@ -44,7 +44,7 @@ fn main() -> miette::Result<()> {
         .flag_if_supported("-pthread")
         .flag_if_supported("-Wl,-wrap=main")
         .include(hpx_include)
-        .compile("cpp-autocxx");
+        .compile("hpx-sys");
 
     println!("cargo:rerun-if-changed=src/main.rs");
     println!("cargo:rerun-if-changed=src/bindings.rs");
