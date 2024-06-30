@@ -1,6 +1,13 @@
 [package]
 name = "hpx-sys"
 version = "0.1.0"
+authors = ["Dikshant <dikshant.073@gmail.com>", "Shreyas Atre <shreyasatre16@gmail.com>"]
+build = "build.rs"
+repository = "https://github.com/pingu-73/hpx-sys"
+description = "FFI bindings for hpx-1.11.0"
+keywords = ["hpx", "hpc"]
+categories = ["concurrency", "api-bindings"]
+license = "BSL-1.0"
 edition = "2021"
 
 [dependencies]
@@ -10,3 +17,6 @@ cxx = "1.0"
 [build-dependencies]
 autocxx-build = "0.27.0"
 miette = { version = "5", features = ["fancy"] } # optional but gives nicer error messages!
+
+# [lib]
+# name = "hpx_sys"
